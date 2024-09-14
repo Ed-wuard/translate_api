@@ -30,55 +30,49 @@ Esta es una API simple construida con Flask que proporciona dos endpoints: uno p
 
 ## Uso
 
-** Ejecutar la API
+Ejecutar la API
 Para ejecutar la API, simplemente ejecuta el siguiente comando:
 
-    ```python
     python app.py
 
 La API estará disponible en http://127.0.0.1:5000/.
 
 ## Endpoints
-- `POST /detect_language: Detectar idioma.
-- `POST /translate: Traducir texto.
+- **POST** /detect_language: *Detectar idioma.*
+- **POST** /translate: *Traducir texto.*
 
 ## Detectar idioma
 
-** Cuerpo:
+**Cuerpo:**
 
-    ```
-        {
-            "text": "aqui el texto"
-        }
-    ```
+     {
+         "text": "aqui el texto"
+     }
 
-** Respuesta:
 
-    ```
-        {
-            "confidence": 1.7387170791625977,
-            "language": "es"
-        }
-    ```
+**Respuesta:**
+
+     {
+         "confidence": 1.7387170791625977,
+         "language": "es"
+     }
+
 
 ## Traducir
 
-** Cuerpo:
+**Cuerpo:**
 
-    ```
-        {
-            "text": "aqui el texto",
-            "target_language": "en"
-        }
-    ```
+     {
+         "text": "aqui el texto",
+         "target_language": "en"
+     }
 
-** Respuesta:
 
-    ```
+**Respuesta:**
+
         {
             "translated_text": "texto traducido"
         }
-    ```
 
 ## Contribuir
 Si deseas contribuir a este proyecto, por favor abre un issue o envía un pull request.
