@@ -14,8 +14,7 @@ Esta es una API simple construida con Flask que proporciona dos endpoints: uno p
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
-
+   git clone https://github.com/Ed-wuard/translate_api.git
 2. Clona el repositorio:
 
     ```python
