@@ -1,0 +1,19 @@
+@api = http://127.0.0.1:5000
+
+
+###  Dectertar Lenguaje
+POST {{api}}/detect_language
+Content-Type: application/json
+
+{
+    "text": "El parque"
+}
+
+###  Traducir Texto
+POST {{api}}/translate
+Content-Type: application/json
+
+{
+    "text": "El parque", 
+    "target_language": "en"
+}
